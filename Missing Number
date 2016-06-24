@@ -1,0 +1,8 @@
+def missingNumber(nums):
+    n = 0
+    for i in nums:
+        n += i
+    n = len(nums)*(len(nums)+1)/2 -n
+    return n
+
+print missingNumber([1,0])
